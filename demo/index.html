@@ -18,7 +18,6 @@
           // assign typing handlers
           $('tbody tr').each(function (i, tr) {
             var $tr = $(tr),
-                $input = $tr.find(':input'),
                 delay = $tr.find('.delay').text(),
                 $inProgress = $tr.find('.in-progress'),
                 $dot = $('<span class="bright">&#x25CF;</span>');
@@ -26,10 +25,11 @@
             $inProgress.empty();
             $dot.appendTo($inProgress);
         
-            $input.typing({
+            $tr.typing({
               start: function () {$dot.removeClass('bright')},
               stop: function () {$dot.addClass('bright')},
-              delay: delay
+              delay: delay,
+              target: ':input'
             });
           });
         });

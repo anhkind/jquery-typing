@@ -2,6 +2,7 @@
 //
 // Version: 0.2.1
 // Updater: Anh Nguyen <anhkind@gmail.com>
+// Website: https://github.com/anhkind/jquery-typing
 //
 // Original:
 // Website: http://narf.pl/jquery-typing/
