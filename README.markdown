@@ -14,8 +14,8 @@ Usage
         stop: function (event, $elem) {
             $elem.css('background', '#f00');
         },
-        delay: 400,
-        target: '.type'
+        delay: 400,     //optional, default is 400(ms)
+        target: '.type' //optional
     });
 
 `delay` is amount of time the plugin waits for another keypress before
@@ -47,15 +47,3 @@ Get production version from
 For development version visit [GitHub][].
 
   [GitHub]: http://github.com/anhkind/jquery-typing
-
-
-Meta
-----
-
-jQuery-typing is written by [Maciej Konieczny][] and uses
-[semantic versioning][] for release numbering.  Everything in `plugin/`
-directory is released into the [public domain][].
-
-  [Maciej Konieczny]: http://narf.pl/
-  [semantic versioning]: http://semver.org/
-  [public domain]: http://unlicense.org/
