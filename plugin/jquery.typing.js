@@ -1,6 +1,9 @@
 // jQuery-typing
 //
-// Version: 0.2.0
+// Version: 0.2.1
+// Updater: Anh Nguyen <anhkind@gmail.com>
+//
+// Original:
 // Website: http://narf.pl/jquery-typing/
 // License: public domain <http://unlicense.org/>
 // Author:  Maciej Konieczny <hello@narf.pl>
@@ -32,6 +35,7 @@
 
         // create other function-scope variables
         var $elem = $(elem),
+            selector = settings.target,
             typing = false,
             delayedCallback;
 
@@ -62,20 +66,20 @@
         }
 
         // listen to regular keypresses
-        $elem.keypress(startTyping);
+        $elem.on('keypress', selector, startTyping);
 
         // listen to backspace and delete presses
-        $elem.keydown(function (event) {
+        $elem.on('keydown', selector, function (event) {
             if (event.keyCode === 8 || event.keyCode === 46) {
                 startTyping(event);
             }
         });
 
         // listen to keyups
-        $elem.keyup(stopTyping);
+        $elem.on('keyup', selector, stopTyping);
 
         // listen to blurs
-        $elem.blur(function (event) {
+        $elem.on('blur', selector, function (event) {
             stopTyping(event, 0);
         });
     }

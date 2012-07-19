@@ -14,18 +14,18 @@ Usage
         stop: function (event, $elem) {
             $elem.css('background', '#f00');
         },
-        delay: 400
+        delay: 400,
+        target: '.type'
     });
-
-`typing` command takes key-value object with `start`, `stop` and
-`delay` keys. They are all optional, so you can either pass only
-`start` callback, `stop` callback, `stop` callback and `delay` time,
-or everything.
 
 `delay` is amount of time the plugin waits for another keypress before
 judging that typing has stopped; it is expressed in milliseconds and
 defaults to 400. Regardless of `delay`'s value, the `stop` callback is
 called immediately when blur event occurs.
+
+`target` is the selector of the main element so that the related events will
+bubble to the main element. This is to optimize the plugin with the new 'on'
+function of jQuery 1.7+.
 
 Callbacks are passed two arguments: event that caused callback execution
 and jQuery object for matched element. Possible events are `keypress`
@@ -36,18 +36,17 @@ callbacks.
 Demo
 ----
 
-Visit <http://narf.pl/jquery-typing/>
-
+To be updated.
 
 Download
 --------
 
 Get production version from
-<http://narf.pl/jquery-typing/jquery.typing-0.2.0.min.js>
+<https://raw.github.com/anhkind/jquery-typing/master/plugin/jquery.typing.min.js>
 
 For development version visit [GitHub][].
 
-  [GitHub]: http://github.com/narfdotpl/jquery-typing
+  [GitHub]: http://github.com/anhkind/jquery-typing
 
 
 Meta

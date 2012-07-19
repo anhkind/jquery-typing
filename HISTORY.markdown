@@ -15,6 +15,8 @@ for [full history][].
 
   - Added blur support.
 
+  - Added event bubbling with new function 'on' of jQuery 1.7+
+
 
 [v0.1][]
 --------
