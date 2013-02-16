@@ -79,8 +79,8 @@
         // listen to keyups
         $elem.on('keyup', selector, stopTyping);
 
-        // listen to blurs
-        $elem.on('blur', selector, function (event) {
+        // listen to focusouts
+        $elem.on('focusout', selector, function (event) {
             stopTyping(event, 0);
         });
     }
