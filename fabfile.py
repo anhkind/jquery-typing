@@ -25,9 +25,9 @@ TOOLS_DIR = join(REPO_DIR, 'tools')
 COMPILER_PATH = join(TOOLS_DIR, 'closure-compiler/compiler.jar')
 YUICOMPRESSOR_PATH = join(TOOLS_DIR,
                           'yuicompressor/build/yuicompressor-2.4.2.jar')
-PLUGIN_PATH = join(PLUGIN_DIR, 'jquery.typing-{0}.js'.format(VERSION))
+PLUGIN_PATH = join(PLUGIN_DIR, 'jquery.typing.js'.format(VERSION))
 COMPRESSED_PLUGIN_PATH = join(PLUGIN_DIR,
-                              'jquery.typing-{0}.min.js'.format(VERSION))
+                              'jquery.typing.min.js'.format(VERSION))
 
 
 env.hosts = ['narf.megiteam.pl']
