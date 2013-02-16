@@ -1,6 +1,6 @@
 // jQuery-typing
 //
-// Version: 0.2.1
+// Version: 0.2.2
 // Updater: Anh Nguyen <anhkind@gmail.com>
 // Website: https://github.com/anhkind/jquery-typing
 //
@@ -79,8 +79,8 @@
         // listen to keyups
         $elem.on('keyup', selector, stopTyping);
 
-        // listen to blurs
-        $elem.on('blur', selector, function (event) {
+        // listen to focusouts
+        $elem.on('focusout', selector, function (event) {
             stopTyping(event, 0);
         });
     }

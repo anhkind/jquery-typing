@@ -17,6 +17,7 @@ for [full history][].
 
   - Added event bubbling with new function 'on' of jQuery 1.7+
 
+  - Changed blur to focusout support.
 
 [v0.1][]
 --------

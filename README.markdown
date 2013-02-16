@@ -21,7 +21,7 @@ Usage
 `delay` is amount of time the plugin waits for another keypress before
 judging that typing has stopped; it is expressed in milliseconds and
 defaults to 400. Regardless of `delay`'s value, the `stop` callback is
-called immediately when blur event occurs.
+called immediately when focusout event occurs.
 
 `target` is the selector of the main element so that the related events will
 bubble to the main element. This is to optimize the plugin with the new 'on'
@@ -29,7 +29,7 @@ function of jQuery 1.7+.
 
 Callbacks are passed two arguments: event that caused callback execution
 and jQuery object for matched element. Possible events are `keypress`
-or `keydown` for `start` callbacks and `keyup` or `blur` for `stop`
+or `keydown` for `start` callbacks and `keyup` or `focusout` for `stop`
 callbacks.
 
 

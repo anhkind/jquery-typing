@@ -4,7 +4,7 @@
     %meta(http-equiv='content-type' content='text/html;charset=utf-8')/
 
     %title jQuery-typing
-    - version = 'v0.2.1'
+    - version = 'v0.2.2'
 
     %link(rel='stylesheet' href='style.css' type='text/css')
 
@@ -101,11 +101,11 @@
         `delay` is amount of time the plugin waits for another keypress before
         judging that typing has stopped; it is expressed in milliseconds and
         defaults to 400. Regardless of `delay`'s value, the `stop` callback is
-        called immediately when blur event occurs.
+        called immediately when focusout event occurs.
 
         Callbacks are passed two arguments: event that caused callback
         execution and jQuery object for matched element. Possible events are
-        `keypress` or `keydown` for `start` callbacks and `keyup` or `blur`
+        `keypress` or `keydown` for `start` callbacks and `keyup` or `focusout`
         for `stop` callbacks.
 
 
