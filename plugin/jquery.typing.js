@@ -1,6 +1,6 @@
 // jQuery-typing
 //
-// Version: 0.2.1
+// Version: 0.2.2
 // Updater: Anh Nguyen <anhkind@gmail.com>
 // Website: https://github.com/anhkind/jquery-typing
 //
